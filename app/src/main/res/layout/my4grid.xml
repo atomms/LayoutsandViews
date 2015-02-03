@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rl1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <GridLayout
+        android:id="@+id/GridLayout1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:orientation="vertical" >
+
+        <Button
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:id="@+id/button1"
+            android:layout_column="0"
+            android:layout_row="0"
+            android:background="@drawable/abc_btn_check_material"
+            />
+
+        <Button
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:id="@+id/button2"
+            android:layout_column="1"
+            android:layout_row="0"
+            android:background="@drawable/abc_btn_check_material"/>
+
+        <Button
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:id="@+id/button3"
+            android:layout_column="0"
+            android:layout_row="1"
+            android:background="@drawable/abc_btn_check_material"
+            />
+
+        <Button
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:id="@+id/button4"
+            android:layout_column="1"
+            android:layout_row="1"
+            android:background="@drawable/abc_btn_check_material"/>
+
+    </GridLayout>
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/imageButton"
+        android:layout_below="@+id/GridLayout1"
+        android:layout_alignRight="@+id/GridLayout1"
+        android:layout_alignLeft="@+id/GridLayout1"
+        android:src="@drawable/abc_ic_menu_moreoverflow_mtrl_alpha"
+         />
+
+    <ToggleButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textOn="ON"
+        android:textOff="OFF"
+        android:layout_below="@+id/imageButton"
+        android:layout_alignRight="@+id/imageButton"
+        android:layout_alignLeft="@+id/imageButton"
+        android:text="New ToggleButton"
+        android:id="@+id/toggleButton"
+        />
+
+</RelativeLayout>

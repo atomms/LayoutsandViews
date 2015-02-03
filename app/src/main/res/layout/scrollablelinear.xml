@@ -1,0 +1,66 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/ScrollView1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".MainActivity" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical" >
+
+        <CheckBox
+            android:id="@+id/CheckBox03"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="CheckBox" />
+
+        <CheckBox
+            android:id="@+id/CheckBox01"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="CheckBox" />
+
+        <CheckBox
+            android:id="@+id/CheckBox02"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="CheckBox" />
+
+        <ToggleButton
+            android:id="@+id/toggleButton1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="ToggleButton" />
+
+        <ImageView
+            android:id="@+id/imageView1"
+            android:layout_width="match_parent"
+            android:layout_height="283dp"
+            android:src="@drawable/ic_launcher" />
+
+        <CheckBox
+            android:id="@+id/checkBox1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="CheckBox" />
+
+        <CheckBox
+            android:id="@+id/checkBox3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="CheckBox" />
+
+        <CheckBox
+            android:id="@+id/checkBox2"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="CheckBox" />
+    </LinearLayout>
+
+</ScrollView>

@@ -1,0 +1,12 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorControlNormal">@color/contrastColorNormal</item>
+        <item name="colorControlActivated">@color/contrastColorActivated</item>
+    </style>
+
+    <color name="contrastColorNormal">#ff9f0800</color>
+    <color name="contrastColorActivated">#ffff0800</color>
+</resources>

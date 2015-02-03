@@ -1,0 +1,49 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:orientation="vertical"
+    android:gravity="left">
+
+    <RadioButton
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="New RadioButton"
+        android:id="@+id/radioButton">
+        <requestFocus/>
+    </RadioButton>
+
+
+
+    <CheckBox
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="New CheckBox"
+        android:id="@+id/checkBox" />
+
+    <ProgressBar
+        style="?android:attr/progressBarStyleLarge"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/progressBar"
+        android:layout_gravity="center_horizontal" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/editText" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Go!"
+        android:id="@+id/button">
+
+    </Button>
+
+    <RatingBar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/ratingBar" />
+
+</LinearLayout>
