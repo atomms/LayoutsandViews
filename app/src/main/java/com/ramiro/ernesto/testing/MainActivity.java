@@ -54,11 +54,6 @@ public class MainActivity extends ActionBarActivity {
                 // Another interface callback
             }
 
-//            public void onItemSelected(AdapterView<?> parent, View view,
-//                                    int position, long id) {
-//                Toast.makeText(MainActivity.this, "You Clicked at " + datosspinner[+position], Toast.LENGTH_SHORT).show();
-//
-//            }
         });
 
     }
