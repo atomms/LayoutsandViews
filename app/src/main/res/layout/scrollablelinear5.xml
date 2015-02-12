@@ -44,6 +44,10 @@
             android:layout_height="283dp"
             android:src="@drawable/ic_launcher" />
 
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="500px" />
+
         <CheckBox
             android:id="@+id/checkBox1"
             android:layout_width="wrap_content"

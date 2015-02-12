@@ -18,15 +18,16 @@ public class MainActivity extends ActionBarActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.spinner);
+        setContentView(R.layout.listview);
         //Actionbar setup
         //getSupportActionBar().setIcon(R.drawable.ic_launcher);
         getSupportActionBar().setDisplayShowHomeEnabled(true);
         getSupportActionBar().setIcon(R.drawable.ic_launcher);
-//        listViewOn();
-//        gridViewOn();
 
-        spinnerOn();
+//uncomment and set xml layout for list/grid/spinner
+        listViewOn();
+//        gridViewOn();
+//        spinnerOn();
 
                    }
 
@@ -35,19 +36,20 @@ public class MainActivity extends ActionBarActivity {
         ArrayAdapter<String> adaptadorspinner = new ArrayAdapter<String>(this,android.R.layout.simple_spinner_item,datosspinner);
 
         final Spinner myspinner = (Spinner)findViewById(R.id.spinner);
-        adaptadorspinner.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
+        adaptadorspinner.setDropDownViewResource(android.R.layout.simple_list_item_multiple_choice);
         myspinner.setAdapter(adaptadorspinner);
 
         //        eventos del spinner
 
-        myspinner.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener(){
+        myspinner.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
 
             @Override
             public void onItemSelected(AdapterView<?> parent, View view,
                                        int pos, long id) {
                 // An item was selected. You can retrieve the selected item using
                 // parent.getItemAtPosition(pos)
-                Toast.makeText(MainActivity.this, "You Clicked at " + myspinner.getItemAtPosition(pos), Toast.LENGTH_SHORT).show();
+//                Toast.makeText(MainActivity.this, "You Clicked at " + myspinner.getItemAtPosition(pos), Toast.LENGTH_SHORT).show();
+                Toast.makeText(MainActivity.this, "You Clicked at " + datosspinner[pos], Toast.LENGTH_SHORT).show();
             }
 
             public void onNothingSelected(AdapterView<?> parent) {
@@ -73,7 +75,7 @@ public class MainActivity extends ActionBarActivity {
                     new AdapterView.OnItemClickListener() {
                         @Override
                         public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
-                            Toast.makeText(MainActivity.this, "You Clicked at " + datosgrid[+position], Toast.LENGTH_SHORT).show();
+                            Toast.makeText(MainActivity.this, "You Clicked at " + datosgrid[position], Toast.LENGTH_SHORT).show();
 //                            Toast.makeText(getApplicationContext(), "clicked item", Toast.LENGTH_SHORT).show();
 
                         }
@@ -101,7 +103,7 @@ public class MainActivity extends ActionBarActivity {
             @Override
             public void onItemClick(AdapterView<?> parent, View view,
                                     int position, long id) {
-                Toast.makeText(MainActivity.this, "You Clicked at " + datoslist[+position], Toast.LENGTH_SHORT).show();
+                Toast.makeText(MainActivity.this, "You Clicked at " + datoslist[position], Toast.LENGTH_SHORT).show();
 
             }
         });
